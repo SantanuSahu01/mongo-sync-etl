@@ -1,0 +1,15 @@
+{
+    "apps": [
+      {
+        "name": "mongodb-sync-etl",
+        "script": "index.js",
+        "listen_timeout": 10000,
+        "restart_delay": 10000,
+        "cwd": ".",
+        "node_args": "--max_old_space_size=3000",
+        "max_memory_restart": "3G",
+        "kill_timeout": 10000
+      }
+    ]
+  }
+  
