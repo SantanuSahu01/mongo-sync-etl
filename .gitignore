@@ -1,0 +1,12 @@
+*.log
+.DS_Store
+dist
+config/local.js
+node_modules
+logs
+.env
+.vscode
+.temp
+.github
+
+.temp
