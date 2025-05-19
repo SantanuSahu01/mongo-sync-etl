@@ -18,11 +18,14 @@ const init = async () => {
 
                 // update with upsert
                 const targetCollection = targetDB.db().collection(process.env.DESTINATION_COLLECTION);
+                delete fullDocument._id;
                 const update = {
                     $set: {
-                        ...updateDescription.updatedFields,
-                        _id: _id,
+                        ...fullDocument,
                         etl: new Date(),
+                    },
+                    $setOnInsert: {
+                        _id: _id,
                     },
                 };
                 const options = { upsert: true };
