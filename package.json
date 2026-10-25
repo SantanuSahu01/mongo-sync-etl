@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nutanix-products/support-tools-utils": "6.1.0",
+    "@nutanix-products/support-tools-utils": "^10.6.1",
     "dotenv": "^16.5.0",
     "lodash": "^4.17.21",
-    "mongodb": "^4.15.0"
+    "mongodb": "^5.9.2"
   }
 }
